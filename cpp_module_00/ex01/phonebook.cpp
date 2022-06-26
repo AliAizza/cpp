@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 01:59:53 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/26 12:56:57 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/06/27 00:45:37 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ void	ft_exit()
 int main()
 {
 	std::string str;
-	std::string s;
+	std::string	s;
 	phonebook p;
 	int i;
 	int x;
@@ -115,32 +115,66 @@ int main()
 	i = 0;
 	while(1337)
 	{
-		getline(std::cin, str);
-		if ((str.compare("ADD")) == 0)
+		getline(std::cin, s);
+		if ((s.compare("ADD")) == 0)
 		{
 			if (i == 8)
 				i = 0;
 			p.contacts[i].setindex(i);
 			std::cout << "FIRST NAME:";
-			getline(std::cin, str);
+			while (str.empty())
+			{
+				getline(std::cin, str);
+				if (!str.empty())
+					break;
+				std::cout << "no empty please" << std::endl;
+			}
 			p.contacts[i].setfirstname(str);
+			str.clear();
 			std::cout << "LAST NAME:";
-			getline(std::cin, str);
+			while (str.empty())
+			{
+				getline(std::cin, str);
+				if (!str.empty())
+					break;
+				std::cout << "no empty please" << std::endl;
+			}
 			p.contacts[i].setlastname(str);
+			str.clear();
 			std::cout << "NICKNAME:";
-			getline(std::cin, str);
+			while (str.empty())
+			{
+				getline(std::cin, str);
+				if (!str.empty())
+					break;
+				std::cout << "no empty please" << std::endl;
+			}
 			p.contacts[i].setnickname(str);
+			str.clear();
 			std::cout << "PHONE NUMBER:";
-			getline(std::cin, str);
+			while (str.empty())
+			{
+				getline(std::cin, str);
+				if (!str.empty())
+					break;
+				std::cout << "no empty please" << std::endl;
+			}
 			p.contacts[i].setnumber(str);
+			str.clear();
 			std::cout << "DARKEST SECRET:";
-			getline(std::cin, str);
+			while (str.empty())
+			{
+				getline(std::cin, str);
+				if (!str.empty())
+					break;
+				std::cout << "no empty please" << std::endl;
+			}
 			p.contacts[i].setsecret(str);
 			i++;
 		}
-		else if ((str.compare("SEARCH")) == 0)
+		else if ((s.compare("SEARCH")) == 0)
 			ft_search(p);
-		else if ((str.compare("EXIT")) == 0)
+		else if ((s.compare("EXIT")) == 0)
 			ft_exit();
 		else
 			std::cout << "invalid paramettre, try again" << std::endl;
