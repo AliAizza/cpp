@@ -1,8 +1,8 @@
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
-// #include "phonebook.hpp"
 #include <iostream>
+#include <ctype.h>
 
 class contact{
     private :
