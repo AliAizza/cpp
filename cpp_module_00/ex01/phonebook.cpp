@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 01:59:53 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/29 22:33:05 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/07/01 02:10:04 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,12 @@ int ft_check(std::string str)
 			return (0);
 		}
 		i++;
+	}
+	i = stoi(str);
+	if (i > 7)
+	{
+		std::cout << "Invalid index! Try again" << std::endl;
+		return (0);
 	}
 	return (1);
 }
@@ -213,15 +219,18 @@ int main()
 				if (ft_check(str))
 				{
 					index = stoi(str);
-					if (index < 0 || (p.contacts[index].getfirstname()).empty())
-						std::cout << "Invalid index! Try again" << std::endl;
-					else
+					if (d == 0)
 					{
-						std::cout << "INDEX: " << p.contacts[index].getindex() << std::endl;
-						std::cout << "FIRSTNAME: " << p.contacts[index].getfirstname() << std::endl;
-						std::cout << "LASTNAME: " << p.contacts[index].getlastname() << std::endl;
-						std::cout << "NICKNAME: " << p.contacts[index].getnickname() << std::endl;
-						j++;
+						if (index < 0 || (p.contacts[index].getfirstname()).empty())
+							std::cout << "Invalid index! Try again" << std::endl;
+						else
+						{
+							std::cout << "INDEX: " << p.contacts[index].getindex() << std::endl;
+							std::cout << "FIRSTNAME: " << p.contacts[index].getfirstname() << std::endl;
+							std::cout << "LASTNAME: " << p.contacts[index].getlastname() << std::endl;
+							std::cout << "NICKNAME: " << p.contacts[index].getnickname() << std::endl;
+							j++;
+						}
 					}
 				}
 			}
