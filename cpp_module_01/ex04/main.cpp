@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 13:28:18 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/28 18:46:03 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/07/01 18:48:11 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 
 int main(int argc, char **argv)
 {
+    if (argc != 4)
+        return (0);
+    if (!strcmp(argv[2], argv[3]))
+        return (0);
     std::fstream infile;
     std::fstream outfile;
     std::string s;

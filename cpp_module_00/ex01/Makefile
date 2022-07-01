@@ -1,6 +1,6 @@
 SRC= contact.cpp phonebook.cpp
 
-FLAGS= g++ -Wall -Wextra -Werror
+FLAGS= c++ -Wall -Wextra -Werror
 
 NAME= phonebook
 

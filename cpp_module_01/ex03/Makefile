@@ -1,6 +1,6 @@
 SRC= main.cpp HumanA.cpp HumanB.cpp weapon.cpp
 
-FLAGS= g++ -Wall -Wextra -Werror
+FLAGS= c++ -Wall -Wextra -Werror
 
 NAME= main
 

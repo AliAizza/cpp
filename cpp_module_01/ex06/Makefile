@@ -1,8 +1,8 @@
 SRC= main.cpp harl.cpp
 
-FLAGS= g++ -Wall -Wextra -Werror
+FLAGS= c++ -Wall -Wextra -Werror -std=c++98
 
-NAME= main
+NAME= Harl
 
 all:		$(NAME)
 
