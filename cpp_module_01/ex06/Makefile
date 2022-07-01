@@ -1,6 +1,6 @@
 SRC= main.cpp harl.cpp
 
-FLAGS= c++ -Wall -Wextra -Werror -std=c++98
+FLAGS= c++ -Wall -Wextra -Werror
 
 NAME= Harl
 
