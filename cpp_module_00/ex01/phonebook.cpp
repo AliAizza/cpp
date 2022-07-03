@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 01:59:53 by aaizza            #+#    #+#             */
-/*   Updated: 2022/07/01 02:10:04 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/07/04 00:48:24 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,11 +73,8 @@ void	ft_searchprint(std::string tmp)
 		}
 		i++;
 	}
-	while (i < 10 && j == 0)
-	{
-		std::cout << ' ';
-		i++;
-	}
+	if (j == 0)
+		std::cout << std::setw(11 - i);
 }
 
 void	ft_search(phonebook p)
