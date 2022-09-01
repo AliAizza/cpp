@@ -6,18 +6,22 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 22:30:33 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/27 23:24:17 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 00:26:05 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-zombie* zombiehorde(int n, std::string name)
+Zombie* zombiehorde(int n, std::string name)
 {
-    zombie  *z;
+    Zombie  *z;
 
-    z = new zombie[n];
-    for (int i = 0; i < n; i++)
-        z[i].setname(name);
-    return (z);
+    if (n > 0)
+    {
+        z = new Zombie[n];
+        for (int i = 0; i < n; i++)
+            z[i].setname(name);
+        return (z);
+    }
+    return (NULL);
 }

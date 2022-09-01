@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 02:33:29 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/28 03:46:25 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/08/15 04:10:07 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ weapon::weapon(){
 
 }
 
-weapon::weapon(std::string type){
+weapon::weapon(const std::string &type){
     this->type = type;
 }
 

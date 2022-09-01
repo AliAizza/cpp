@@ -3,14 +3,14 @@
 
 #include <iostream>
 
-class harl{
+class Harl{
     private:
         void    debug(void);
         void    info(void);
         void    warning(void);
         void    error(void);
     public:
-        harl();
+        Harl();
         void    complain(std::string level);
 };
 

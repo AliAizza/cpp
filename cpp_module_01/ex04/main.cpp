@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 13:28:18 by aaizza            #+#    #+#             */
-/*   Updated: 2022/07/01 18:48:11 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/08/18 00:43:53 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int main(int argc, char **argv)
     std::string str;
     size_t i;
     std::string s1 = argv[2];
+    if (s1.empty())
+        return (0);
     std::string s2 = argv[3];
 
     s = argv[1];
@@ -35,13 +37,12 @@ int main(int argc, char **argv)
     s.clear();
     while (getline(infile, s))
     {
-        while (s.find(s1) != std::string::npos)
+        i = 0;
+        while ((i = s.find(s1, i )) != std::string::npos)
         {
-        i = s.find(s1);
-        if (std::string::npos){
             s.erase(i, s1.size());
-            s.insert(i, s2);
-        }
+             s.insert(i, s2);
+            i += s2.size();
         }
         str += s;
         if (infile.eof())

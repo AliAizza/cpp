@@ -6,15 +6,15 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 00:06:15 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/27 00:08:16 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 00:22:15 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-zombie *newzombie(std::string name)
+Zombie *newzombie(std::string name)
 {
-    zombie  *z = new zombie(name);
+    Zombie  *z = new Zombie(name);
 
     return (z);
 }

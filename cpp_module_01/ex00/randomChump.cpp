@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 00:06:06 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/27 00:08:21 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 00:21:46 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void    randomchump(std::string name)
 {
-    zombie *z = newzombie(name);
+    Zombie *z = newzombie(name);
     z->announce();
     delete z;
 }

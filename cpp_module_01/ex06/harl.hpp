@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-class harl{
+class Harl{
     private:
         void    debug(void);
         void    info(void);
@@ -11,10 +11,11 @@ class harl{
         void    error(void);
         std::string levels[4];
     public:
-        harl();
+        Harl();
         void    complain(std::string level);
         int     getindex(std::string level);
         void    setlevels(void);
+        ~Harl();
 };
 
 #endif

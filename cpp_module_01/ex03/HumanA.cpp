@@ -6,29 +6,29 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 03:02:15 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/28 04:26:07 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 00:29:11 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-humanA::humanA(){
+HumanA::HumanA(){
 
 }
 
-humanA::humanA(std::string name, weapon &w){
+HumanA::HumanA(std::string name, weapon &w){
     this->name = name;
     this->w = &w;
 }
 
-void    humanA::attack(){
+void    HumanA::attack(){
     std::cout << this->name << " attacks with their " << this->w->getType() << std::endl;
 }
 
-void    humanA::setname(std::string name){
+void    HumanA::setname(std::string name){
     this->name = name;
 }
 
-void    humanA::setweapon(weapon &w){
+void    HumanA::setweapon(weapon &w){
     this->w = &w;
 }

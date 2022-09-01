@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:24:20 by aaizza            #+#    #+#             */
-/*   Updated: 2022/07/01 18:52:36 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 00:32:34 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-    harl h;
+    Harl h;
     h.complain("DEBUG");
     h.complain("INFO");
     h.complain("WARNING");

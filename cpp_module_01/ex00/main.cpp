@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 00:06:18 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/27 00:12:38 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 00:20:20 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-    zombie *a = newzombie("first_zombie"), *b = newzombie("second_zombie");
+    Zombie *a = newzombie("first_zombie"), *b = newzombie("second_zombie");
     a->announce();
     b->announce();
     randomchump("random");

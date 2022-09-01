@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 19:24:23 by aaizza            #+#    #+#             */
-/*   Updated: 2022/06/30 01:39:28 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 00:39:53 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main(int argc, char **argv)
 {
-    harl h;
+    Harl h;
 
     if (argc != 2)
         return (0);
