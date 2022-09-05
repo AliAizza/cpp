@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 03:12:02 by aaizza            #+#    #+#             */
-/*   Updated: 2022/09/02 00:30:33 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 02:12:16 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main()
 {
-    // weapon  x , y;
+    // Weapon  x , y;
     // x.setType("ak-47");
     // y.setType("uzi");
     // HumanA  a("ali",x);
@@ -25,14 +25,14 @@ int main()
     // b.attack();
 
    {
-    weapon club = weapon("crude spiked club");
+    Weapon club = Weapon("crude spiked club");
     HumanA bob("Bob", club);
     bob.attack();
     club.setType("some other type of club");
     bob.attack();
     }
     {
-    weapon club = weapon("crude spiked club");
+    Weapon club = Weapon("crude spiked club");
     HumanB jim("Jim");
     jim.setweapon(club);
     jim.attack();

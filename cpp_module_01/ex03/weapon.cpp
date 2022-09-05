@@ -6,24 +6,27 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 02:33:29 by aaizza            #+#    #+#             */
-/*   Updated: 2022/08/15 04:10:07 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 02:20:26 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "weapon.hpp"
 
-weapon::weapon(){
+Weapon::Weapon(){
 
 }
 
-weapon::weapon(const std::string &type){
+Weapon::Weapon(const std::string &type){
     this->type = type;
 }
 
-const std::string weapon::getType(){
+const std::string Weapon::getType(){
     return (this->type);
 }
 
-void    weapon::setType(std::string type){
+void    Weapon::setType(std::string type){
     this->type = type;
+}
+Weapon::~Weapon(){
+
 }

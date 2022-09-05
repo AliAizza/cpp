@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 13:28:18 by aaizza            #+#    #+#             */
-/*   Updated: 2022/08/18 00:43:53 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 02:51:33 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
     while (getline(infile, s))
     {
         i = 0;
-        while ((i = s.find(s1, i )) != std::string::npos)
+        while ((i = s.find(s1, i)) != std::string::npos)
         {
             s.erase(i, s1.size());
              s.insert(i, s2);
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
         }
         str += s;
         if (infile.eof())
-            break;        
+            break;
         str += '\n';
     }
     outfile << str;

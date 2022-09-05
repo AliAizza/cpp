@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 03:11:00 by aaizza            #+#    #+#             */
-/*   Updated: 2022/09/02 00:29:11 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 02:18:49 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,9 @@ void    HumanB::setname(std::string name){
     this->name = name;
 }
 
-void    HumanB::setweapon(weapon &w){
+void    HumanB::setweapon(Weapon &w){
     this->w = &w;
+}
+HumanB::~HumanB(){
+
 }

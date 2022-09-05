@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 03:02:15 by aaizza            #+#    #+#             */
-/*   Updated: 2022/09/02 00:29:11 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/02 13:03:09 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ HumanA::HumanA(){
 
 }
 
-HumanA::HumanA(std::string name, weapon &w){
+HumanA::HumanA(std::string name, Weapon &w){
     this->name = name;
     this->w = &w;
 }
@@ -29,6 +29,10 @@ void    HumanA::setname(std::string name){
     this->name = name;
 }
 
-void    HumanA::setweapon(weapon &w){
+void    HumanA::setweapon(Weapon &w){
     this->w = &w;
+}
+
+HumanA::~HumanA(){
+
 }

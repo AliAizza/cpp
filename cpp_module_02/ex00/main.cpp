@@ -5,23 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/27 23:07:45 by aaizza            #+#    #+#             */
-/*   Updated: 2022/09/02 02:01:20 by aaizza           ###   ########.fr       */
+/*   Created: 2022/09/05 14:10:34 by aaizza            #+#    #+#             */
+/*   Updated: 2022/09/05 14:11:22 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Fixed.hpp"
 
 int main()
 {
-    Zombie *z;
-    int i = 0;
-
-    z = zombiehorde(5, "kaaaaamliiiin");
-    if (z != NULL)
-    {
-        while (!(z[i].getname()).empty())
-            z[i++].announce();
-    }
-    delete [] z;
+    Fixed a;
+    Fixed b( a );
+    Fixed c;
+    c = b;
+    std::cout << a.getRawBits() << std::endl;
+    std::cout << b.getRawBits() << std::endl;
+    std::cout << c.getRawBits() << std::endl;
+return 0;
 }
