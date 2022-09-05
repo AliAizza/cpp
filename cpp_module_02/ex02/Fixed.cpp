@@ -6,7 +6,7 @@
 /*   By: aaizza <aaizza@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/05 13:26:40 by aaizza            #+#    #+#             */
-/*   Updated: 2022/09/05 21:47:00 by aaizza           ###   ########.fr       */
+/*   Updated: 2022/09/05 22:45:29 by aaizza           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ Fixed& Fixed::operator--(){
 Fixed Fixed::operator--(int){
     Fixed tmp = *this;
     this->value--;
-    return(*this);
+    return(tmp);
 }
 
 Fixed& Fixed::min(Fixed& f1, Fixed& f2){
